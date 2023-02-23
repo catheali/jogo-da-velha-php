@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @param string $winner
+ * @param $winner
  * @param array<string> $players
  * @return string 
  */
 
- function showWinner(string $winner, array $players): string
+ function showWinner($winner, array $players): string
  {
     if ($winner === PLAYER_ONE_ICON) {
         return "Vencedor: {$players[0]}.\n";

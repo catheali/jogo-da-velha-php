@@ -34,7 +34,7 @@ do {
         } elseif (validate($board, PLAYER_TWO_ICON)) {
             $winner = PLAYER_TWO_ICON;
         } else {
-            $winner = null;
+          $winner = null;
         }
         if(isBoardFull($board)) {
             break;
