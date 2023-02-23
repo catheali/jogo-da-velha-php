@@ -13,11 +13,9 @@ require_once __DIR__.'/showWinner.php';
 require_once __DIR__.'/playAgain.php';
 
 do {
-    
     $players = getPlayersName();
     $player = PLAYER_ONE_ICON;
     $board = buildBoard();
-
     $winner = null;
 
     while ($winner === null) {
@@ -29,7 +27,6 @@ do {
         if(!isPositionCorrect($position, $board)) {
             continue;
         }
-
         $board[$position] = $player;
 
         if (validate($board, PLAYER_ONE_ICON)) {
@@ -39,15 +36,12 @@ do {
         } else {
             $winner = null;
         }
-
         if(isBoardFull($board)) {
             break;
         }
-
         $player = swapPlayer($player);
        
     }
-
    echo showBoard($board);
    echo showWinner($winner, $players);
 
