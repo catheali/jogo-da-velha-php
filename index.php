@@ -7,9 +7,10 @@ require_once __DIR__.'/buildBoard.php';
 require_once __DIR__.'/showBoard.php';
 require_once __DIR__.'/isPositionCorrect.php';
 require_once __DIR__.'/validate.php';
-require_once __DIR__.'swapPlayer.php';
-require_once __DIR__.'showWinner.php';
-require_once __DIR__.'playAgain.php';
+require_once __DIR__.'/isBoardFull.php';
+require_once __DIR__.'/swapPlayer.php';
+require_once __DIR__.'/showWinner.php';
+require_once __DIR__.'/playAgain.php';
 
 do {
     

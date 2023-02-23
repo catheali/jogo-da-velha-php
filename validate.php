@@ -6,7 +6,7 @@
  * @return boolean 
  */
 
- function validade(array $board, string $player): bool
+ function validate(array $board, string $player): bool
  {
     return  ($board[0] === $player && $board[1] === $player && $board[2] === $player) ||
     ($board[3] === $player && $board[4] === $player && $board[5] === $player) ||
